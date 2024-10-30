@@ -96,7 +96,10 @@ h1{
         margin-right: 20px;
     }
 
-
+a{
+    text-decoration: none;
+    color: #f2f2f2;
+}
 
 
 nav {
@@ -176,13 +179,24 @@ nav a:hover {
     justify-content: space-between; /* จัดวางองค์ประกอบให้ห่างกัน */
     align-items: center; /* จัดวางองค์ประกอบให้ตรงกลางตามแนวตั้ง */
     font-size: 20px;
+    
   }
-  .container1 {
-    margin-top: 0px;
+
+  .container0 {
+    margin-top: 10px;
     display: flex;
-    justify-content: space-between; /* จัดวางองค์ประกอบให้ห่างกัน */
+    justify-content: space-around; /* จัดวางองค์ประกอบให้ห่างกัน */
     align-items: center; /* จัดวางองค์ประกอบให้ตรงกลางตามแนวตั้ง */
     font-size: 20px;
+    flex-wrap: wrap;
+  }
+  .container1{
+    margin-top: 0px;
+    display: flex;
+    text-decoration: none;
+    align-items: center; /* จัดวางองค์ประกอบให้ตรงกลางตามแนวตั้ง */
+    font-size: 20px;
+    flex-wrap: wrap;
   }
   
 .container2 {
@@ -225,4 +239,50 @@ footer p {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
     padding-top: 10px;
+}
+
+
+.box {
+    width: 33.33333%; /* กำหนดความกว้างของกล่องแต่ละกล่องเป็น 32% */
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box; /* ทำให้ความกว้างรวมขอบ */
+    background-color: #738a6e;
+    margin-top: 0%;
+  }
+  @media screen and (max-width: 1000px) {
+    .box {
+      width: 100%; /* ทำให้กล่องข้อความเต็มความกว้างเมื่อหน้าจอแคบมาก */
+    }
+  }  
+
+
+  @media screen and (max-width: 725px){
+    .box-l{
+        font-size: 14.5px;
+    }
+
+    footer p{
+        font-size: 20px;
+    }
+  }
+
+  @media screen and (max-width: 500px){
+    footer p{
+        font-size: 15px;
+    }
+  }
+
+
+  @media screen and (max-width: 700px){
+    img{
+        width: 210px;
+        height: 280px;
+  }
+  }
+ @media screen and (max-width: 700px){
+    video{
+        width: 600px;
+        height: 256px;
+  }
 }
